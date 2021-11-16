@@ -1129,6 +1129,12 @@ class Encore {
         return this;
     }
 
+    enableSWCLoader(callback = () => {}) {
+        webpackConfig.enableSWCLoader(callback);
+
+        return this;
+    }
+
     /**
      * Call this to enable forked type checking for TypeScript loader
      * https://github.com/TypeStrong/ts-loader/blob/v2.3.0/README.md#faster-builds
